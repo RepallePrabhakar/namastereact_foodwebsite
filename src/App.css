@@ -1,42 +1,56 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  background-color: beige;
+}
+.app {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: deepskyblue;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header_logo {
+  width: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.header_ul {
+  display: flex;
+  font-size: 20px;
+  padding: 0px 20px;
+  list-style-type: none;
+  background-color: aquamarine;
 }
 
-.card {
-  padding: 2em;
+.header_ul > li {
+  margin: 10px;
+  padding: 10px;
+  background-color: deepskyblue;
 }
 
-.read-the-docs {
-  color: #888;
+.input_bar {
+  margin: 10px 0px;
+  width: 20%;
+  background-color: darkgrey;
+}
+
+.search_btn {
+  margin-left: 3px;
+}
+
+.rest_card {
+  margin: 6px;
+  width: 150px;
+  padding: 10px;
+  border: 1px dotted lightcoral;
+  background-color: ivory;
+}
+
+.rest_card:hover {
+  cursor: pointer;
+  border: 1px solid brown;
 }
