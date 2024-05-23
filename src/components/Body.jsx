@@ -603,6 +603,13 @@ const Body = () => {
         <RestCard resData={resreq[5]} />
         <RestCard resData={resreq[6]} />
         <RestCard resData={resreq[0]} />
+        <RestCard resData={resreq[1]} />
+        <RestCard resData={resreq[2]} />
+        <RestCard resData={resreq[3]} />
+        <RestCard resData={resreq[4]} />
+        <RestCard resData={resreq[5]} />
+        <RestCard resData={resreq[6]} />
+        <RestCard resData={resreq[0]} />
       </div>
     </>
   );
