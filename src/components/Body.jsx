@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 import RestCard from "./RestCard";
 //import resreq from "../utils/mockdata";
@@ -58,10 +59,12 @@ const Body = () => {
       </button>
       <div className="app">
         {filteredData.map((restaurant) => {
-          //console.log(resturent.info.id);
           return (
-            <RestCard key={restaurant.info.id} resProps={restaurant?.info} />
+            <Link to={"/restaurants/" + restaurant?.info.id}>
+              <RestCard key={restaurant.info.id} resProps={restaurant?.info} />
+            </Link>
           );
+          //console.log(resturent.info.id);
         })}
         {/* {resData &&
           resData.map((resturent) => {

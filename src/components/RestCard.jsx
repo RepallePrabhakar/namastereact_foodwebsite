@@ -3,7 +3,7 @@ import React from "react";
 const RestCard = (props) => {
   const { resProps } = props;
 
-  const { cloudinaryImageId, name, avgRating, cuisines, costForTwo, sla } =
+  const { id, cloudinaryImageId, name, avgRating, cuisines, costForTwo, sla } =
     resProps;
   return (
     <div className="rest_card">
@@ -14,6 +14,7 @@ const RestCard = (props) => {
           cloudinaryImageId
         }
       />
+      <h4>ID: {id}</h4>
       <h3>{name}</h3>
       <h4>{cuisines.join(", ")}</h4>
       <h4>{avgRating} stars</h4>

@@ -6,6 +6,7 @@ import "./index.css";
 import About from "./components/About.jsx";
 import Error from "./components/Error.jsx";
 import Body from "./components/Body.jsx";
+import RestMenu from "./components/RestMenu.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/restaurants/:resId",
+        element: <RestMenu />,
       },
     ],
     errorElement: <Error />,
