@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
+//import "../App.css";
 import RestCard from "./RestCard";
 //import resreq from "../utils/mockdata";
 const Body = () => {

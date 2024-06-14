@@ -15,7 +15,7 @@ const useResMenu = (resId) => {
     //console.log(json.data);
     setResMenu(json?.data);
   };
-  console.log(resMenu);
+  //console.log(resMenu);
   return resMenu;
 };
 

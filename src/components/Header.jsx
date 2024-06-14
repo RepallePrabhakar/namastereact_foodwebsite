@@ -3,16 +3,18 @@ import { Link } from "react-router-dom";
 import "../App.css";
 import reslogo from "../assets/vecteezy_food-logo-design-template-restaurant_14971638.png";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [loginTxt, setLoginTxt] = useState("Login");
   const onlineStatus = useOnlineStatus();
+  const cartLength = useSelector((store) => store.cart.items);
   let handleLoginBtn = () => {
     //console.log("clicked");
     loginTxt === "Login" ? setLoginTxt("Logout") : setLoginTxt("Login");
   };
   return (
-    <div className="header">
+    <div className="flex">
       <img
         className="header_logo"
         src={reslogo}
@@ -26,7 +28,9 @@ const Header = () => {
         <li>
           <Link to="/about">About Us</Link>
         </li>
-        <li>Cart</li>
+        <li>
+          <Link to="/cart">Cart - ({cartLength.length} items)</Link>
+        </li>
         <button className="login-btn" onClick={handleLoginBtn}>
           {loginTxt}
         </button>
